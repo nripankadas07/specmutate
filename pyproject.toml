@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "specmutate"
+version = "0.1.0"
+description = "Metamorphic test-vector generator for developer tools."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Dr. Nripanka Das"}]
+keywords = ["testing", "metamorphic testing", "developer tools", "evaluation"]
+
+[project.scripts]
+specmutate = "specmutate.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
